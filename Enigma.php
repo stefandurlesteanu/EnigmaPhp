@@ -16,13 +16,16 @@ class Enigma
 
 
 
-    public static function handleCipherOperation($argsParser) {
-        $cipher = CipherFactory::getCipherForArgs($argsParser);
 
+    public static function handleCipherOperation($argsParser) {
+         $cipher = CipherFactory::getCipherForArgs($argsParser);
+        echo self::$menu;
+        var_dump( $argsParser);
         // use cipher and display result or display menu if no args or wrong args provided
     }
 
 }
+
 
 //do not modify this code, but please understand it :)
 $args=array_slice($argv,1);

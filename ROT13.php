@@ -1,7 +1,6 @@
 <?php
 
 
-
 class ROT13 implements Cipher
 {
     public function decrypt($message)

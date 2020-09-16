@@ -1,6 +1,5 @@
 <?php
-
-
+include 'Cipher.php';
 
 class MorseCode implements Cipher
 {

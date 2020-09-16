@@ -1,7 +1,6 @@
 <?php
 
 
-
 class RailFence implements Cipher
 {
     public function decrypt($message)

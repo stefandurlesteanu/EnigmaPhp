@@ -3,6 +3,7 @@
 include("CipherFactory.php");
 include("ArgsParser.php");
 
+
 class Enigma
 {
     public static $menu="Enigma Manual\n" .
@@ -18,9 +19,9 @@ class Enigma
 
 
     public static function handleCipherOperation($argsParser) {
-         $cipher = CipherFactory::getCipherForArgs($argsParser);
+        $cipher = CipherFactory::getCipherForArgs($argsParser);
         echo self::$menu;
-        var_dump( $argsParser);
+//        var_dump((array) $argsParser);
         // use cipher and display result or display menu if no args or wrong args provided
     }
 

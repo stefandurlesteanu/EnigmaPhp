@@ -52,7 +52,7 @@ class Enigma
                     $cipher->encrypt($message);
                 }
 
-            } else { echo "Due";}
+            } else { echo self::$menu;}
 
 
 

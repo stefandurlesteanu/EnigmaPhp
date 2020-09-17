@@ -17,7 +17,7 @@ class Enigma
     "   EncryptionKey   : Optional -> must be provided if cipher requires a key";
 
     public static function readFile($key, $file){
-        $message = ''. $key;
+        $message = ''. $key . '-';
         $fileX = fopen($file, 'rb') or die("Unable to open file!");
         // Output one character until end-of-file
         while(!feof($fileX)) {

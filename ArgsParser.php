@@ -15,7 +15,7 @@ class ArgsParser
                 throw new EnigmaException("Too many");
             }
 
-            if(count($args) > 1 && count($args) < 4) {
+            if(count($args) === 2) {
                 throw new EnigmaException("Not enough");
             }
 
@@ -30,7 +30,7 @@ class ArgsParser
                 $this->option = $args[0] ;
                 $this->cipher = $args[1] ;
                 $this->file =  $args[2] ;
-                $this->key = $args[3];
+                $this->key = isset($args[3]) ? $args[3] : null;
             }
         } catch (EnigmaException $e){
             echo $e->notEnoughArgs();

@@ -66,8 +66,9 @@ class ArgsParser
 
         } catch (EnigmaException $e){
             echo "\033[31;1;4m". $message ."\n\n" . "\033[0m";
-            $e->fileError();
+            return false;
         }
+        return true;
     }
 
 }

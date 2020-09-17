@@ -6,6 +6,7 @@ class MorseCode implements Cipher
     public function decrypt($message)
     {
         // TODO: Implement decrypt() method.
+        echo $message;
     }
 
     public function encrypt($message)

@@ -16,6 +16,16 @@ class Enigma
     "   FileName        : path to file to encrypt/decrypt\n" .
     "   EncryptionKey   : Optional -> must be provided if cipher requires a key";
 
+    public static function readFile($key, $file){
+        $message = ''. $key;
+        $fileX = fopen($file, 'rb') or die("Unable to open file!");
+        // Output one character until end-of-file
+        while(!feof($fileX)) {
+            $message .= fgets($fileX);
+        }
+        fclose($fileX);
+        return $message;
+    }
 
 
 
@@ -29,7 +39,21 @@ class Enigma
             echo self::$menu;
         } else {
             $cipher = CipherFactory::getCipherForArgs($args);
-            $argsParser->checkFile($args['file']);
+            if ($cipher === null ){
+                echo self::$menu;
+                die();
+            }
+            if($argsParser->checkFile($args['file'])){
+                $key = isset($args['key']) ? $args['key'] : '';
+                $message =  self::readFile($key, $args['file']);
+                if ($args['option'] === '-d'){
+                    $cipher->decrypt($message);
+                } elseif ($args['option'] === '-e'){
+                    $cipher->encrypt($message);
+                }
+
+            } else { echo "Due";}
+
 
 
         }

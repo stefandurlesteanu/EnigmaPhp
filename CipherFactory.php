@@ -25,10 +25,17 @@ class CipherFactory
             if (self::isCipherAvailable($argsParser['cipher'])) {
                 switch ($argsParser['cipher']) {
                     case 'rot13':
+                        if ($argsParser['key'] === null){
+                            throw new EnigmaException('requires a key!');
+                        }
                         return new ROT13();
                     case 'rail-fence':
+                        if ($argsParser['key'] === null){
+                            throw new EnigmaException('requires a key!');
+                        }
                         return new RailFence();
                     case 'morse':
+
                         return new MorseCode();
                     default:
                         throw new EnigmaException('NULL');
@@ -36,7 +43,7 @@ class CipherFactory
             }
             throw new EnigmaException($argsParser['cipher']);
         } catch (EnigmaException $e){
-            echo $e->wrongCipherCode();
+            echo $e->wrongCipher();
         }
         return null;
     }

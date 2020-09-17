@@ -19,9 +19,18 @@ class Enigma
 
 
     public static function handleCipherOperation($argsParser) {
-        $cipher = CipherFactory::getCipherForArgs($argsParser);
-        echo self::$menu;
-//        var_dump((array) $argsParser);
+        $args = (array) $argsParser;
+        $argsParser->checkOption();
+        if ($args ['option'] === '-h' || count(array_filter($args)) === 0 ){
+            echo 'Outside Factory';
+            echo self::$menu;
+
+        } else {
+            $cipher = CipherFactory::getCipherForArgs($args);
+
+            echo 'Inside Factory';
+        }
+
         // use cipher and display result or display menu if no args or wrong args provided
     }
 

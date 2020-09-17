@@ -10,7 +10,7 @@ class CipherFactory
 
     public static function isCipherAvailable($cipherName)
     {
-        if (in_array($cipherName, ['rot13', 'rail-fence', 'morse']))
+        if (in_array($cipherName, ['rot13', 'rail-fence', 'morse', null] ,false))
         {
             return true;
         }
@@ -20,7 +20,6 @@ class CipherFactory
 
     public static function getCipherForArgs($argsParser)
     {
-        $argsParser = (array) $argsParser;
         try {
             //return an appropriate Cipher Object or throw EnigmaException if cipher not available
             if (self::isCipherAvailable($argsParser['cipher'])) {
@@ -31,6 +30,8 @@ class CipherFactory
                         return new RailFence();
                     case 'morse':
                         return new MorseCode();
+                    default:
+                        throw new EnigmaException('NULL');
                 }
             }
             throw new EnigmaException($argsParser['cipher']);

@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="27ca5450-75ef-495c-8be9-367d5928cdca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArgsParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/ArgsParser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CipherFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/CipherFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Enigma.php" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnigmaException.php" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MorseCode.php" beforeDir="false" afterPath="$PROJECT_DIR$/MorseCode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT13.php" beforeDir="false" afterPath="$PROJECT_DIR$/ROT13.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RailFence.php" beforeDir="false" afterPath="$PROJECT_DIR$/RailFence.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +40,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -55,7 +54,7 @@
       <workItem from="1600006489863" duration="3502000" />
       <workItem from="1600159704977" duration="927000" />
       <workItem from="1600185106674" duration="174000" />
-      <workItem from="1600259215127" duration="11759000" />
+      <workItem from="1600259215127" duration="20381000" />
     </task>
     <servers />
   </component>
@@ -63,6 +62,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="524" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1600299701408">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="524" y="116" key="#com.intellij.ide.util.MemberChooser/0.23.1440.826@0.23.1440.826" timestamp="1600299701408" />
     <state x="275" y="120" key="NewPhpClassDialog" timestamp="1600008268833">
       <screen x="0" y="23" width="1280" height="729" />
     </state>

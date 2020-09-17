@@ -4,7 +4,6 @@
     <list default="true" id="27ca5450-75ef-495c-8be9-367d5928cdca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RailFence.php" beforeDir="false" afterPath="$PROJECT_DIR$/RailFence.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toEncrypt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/toEncrypt.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
       <workItem from="1600159704977" duration="927000" />
       <workItem from="1600185106674" duration="174000" />
       <workItem from="1600259215127" duration="24899000" />
-      <workItem from="1600345185172" duration="12208000" />
+      <workItem from="1600345185172" duration="15323000" />
     </task>
     <servers />
   </component>

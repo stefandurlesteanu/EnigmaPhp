@@ -8,6 +8,11 @@ class EnigmaException extends Exception
         return "\033[31;1;4m". ucfirst($this->getMessage())." is not a valid option.\n\n" . "\033[0m" ;
     }
 
+    public function fileError() {
+        //error message
+        return "\033[31;1;4m". ucfirst($this->getMessage()).".\n\n" . "\033[0m";
+    }
+
     public function wrongCipherCode() {
         if ($this->getMessage() === "NULL"){
             return "\033[31;1;4m".'Cipher can not be ' .ucfirst($this->getMessage()). ".\n\n" . "\033[0m" ;

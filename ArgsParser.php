@@ -50,4 +50,24 @@ class ArgsParser
         }
     }
 
+    public function checkFile($file){
+        $message = '';
+        try {
+            if (!file_exists($file)) {
+               $message .= "File wrong path.";
+                throw new EnigmaException("File wrong path.");
+
+            }
+
+            if (pathinfo($file)['extension'] !== 'txt') {
+                $message .= "File wrong extension. Only 'txt' aloud.";
+                throw new EnigmaException("File wrong extension. Only 'txt' aloud.");
+            }
+
+        } catch (EnigmaException $e){
+            echo "\033[31;1;4m". $message ."\n\n" . "\033[0m";
+            $e->fileError();
+        }
+    }
+
 }

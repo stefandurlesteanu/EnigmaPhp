@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27ca5450-75ef-495c-8be9-367d5928cdca" name="Default Changelist" comment="" />
+    <list default="true" id="27ca5450-75ef-495c-8be9-367d5928cdca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArgsParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/ArgsParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enigma.php" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnigmaException.php" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaException.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +53,8 @@
       <workItem from="1600006489863" duration="3502000" />
       <workItem from="1600159704977" duration="927000" />
       <workItem from="1600185106674" duration="174000" />
-      <workItem from="1600259215127" duration="20690000" />
+      <workItem from="1600259215127" duration="24899000" />
+      <workItem from="1600345185172" duration="603000" />
     </task>
     <servers />
   </component>

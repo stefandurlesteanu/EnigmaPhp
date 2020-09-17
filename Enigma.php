@@ -4,6 +4,7 @@ include("CipherFactory.php");
 include("ArgsParser.php");
 
 
+
 class Enigma
 {
     public static $menu="Enigma Manual\n" .
@@ -18,17 +19,19 @@ class Enigma
 
 
 
+
     public static function handleCipherOperation($argsParser) {
         $args = (array) $argsParser;
         $argsParser->checkOption();
+
         if ($args ['option'] === '-h' || count(array_filter($args)) === 0 ){
             echo 'Outside Factory';
             echo self::$menu;
-
         } else {
             $cipher = CipherFactory::getCipherForArgs($args);
+            $argsParser->checkFile($args['file']);
 
-            echo 'Inside Factory';
+
         }
 
         // use cipher and display result or display menu if no args or wrong args provided
